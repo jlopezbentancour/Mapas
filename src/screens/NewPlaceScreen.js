@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
   Button,
-  TextInput,
   ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
+import React, { useEffect, useState } from "react";
+
 import { COLORS } from "../constants";
-import { addPlace } from "../store/places.actions";
-import { useDispatch } from "react-redux";
 import ImageSelector from "../components/ImageSelector";
 import LocationSelector from "../components/LocationSelector";
+import { addPlace } from "../store/places.actions";
+import { useDispatch } from "react-redux";
 
 const NewPlaceScreen = ({ navigation, route }) => {
   const dispatch = useDispatch();

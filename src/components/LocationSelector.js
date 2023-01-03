@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View, Button, Alert } from "react-native";
 import * as Location from "expo-location";
+
+import { Alert, Button, StyleSheet, Text, View } from "react-native";
+import React, { useEffect, useState } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { COLORS } from "../constants";
@@ -15,7 +16,7 @@ const LocationSelector = ({ onLocation, mapLocation }) => {
     if (mapLocation) {
       setPickedLocation(mapLocation);
       onLocation(mapLocation);
-    } 
+    }
   }, [mapLocation]);
 
   const verifyPermissons = async () => {

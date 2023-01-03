@@ -1,6 +1,7 @@
-import React, { useState, useLayoutEffect } from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import React, { useLayoutEffect, useState } from "react";
+import { StyleSheet, TouchableOpacity } from "react-native";
+
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const initialRegion = {

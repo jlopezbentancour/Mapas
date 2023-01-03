@@ -1,14 +1,14 @@
-import React from "react";
 import { Platform, TouchableOpacity } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavigationContainer } from "@react-navigation/native";
 
+import { COLORS } from "../constants";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import MapScreen from "../screens/MapScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import NewPlaceScreen from "../screens/NewPlaceScreen";
 import PlaceDetailScreen from "../screens/PlaceDetailScreen";
 import PlaceListScreen from "../screens/PlaceListScreen";
-import NewPlaceScreen from "../screens/NewPlaceScreen";
-import MapScreen from "../screens/MapScreen";
-import { COLORS } from "../constants";
+import React from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const PlaceStack = createNativeStackNavigator();
 
